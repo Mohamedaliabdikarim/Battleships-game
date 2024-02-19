@@ -164,7 +164,7 @@ def get_player_shot(guesses):
     ok = "n"
     while ok == "n":
         try:
-            shot = input("Please enter your guess:/n ")
+            shot = input("Please enter your guess: ")
             shot = int(shot)
             if shot < 0 or shot > 99:
                 print("Incorrect number, please try again")
