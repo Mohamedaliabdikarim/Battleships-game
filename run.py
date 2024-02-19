@@ -181,6 +181,8 @@ def check_if_empty(list_of_lists):
     return all([not elem for elem in list_of_lists])
 
 def play_battleship():
+    print("Welcome to the Battleship game!")
+    print("Your objective is to sink all the computer's ships before they sink yours.")
     hit_player = []
     miss_player = []
     comp_player = []
@@ -205,6 +207,8 @@ def play_battleship():
     ships_computer, taken_computer = create_computer_ships(taken_computer, battleships)
     display_player_board(taken_computer)
 
+    print("Let the Battleship game begin!")
+
     # Loop
     for i in range(80):
         # Player shoots
@@ -213,6 +217,9 @@ def play_battleship():
         ships_player, hit_player, miss_player, comp_player, missed_player = check_player_shot(
             shot_player, ships_player, hit_player, miss_player, comp_player)
         display_game_board(hit_player, miss_player, comp_player)
+
+        print("Your Hits:", hit_player)
+        print("Your Misses:", miss_player)
 
         # Repeat until ships are empty
         if check_if_empty(ships_player):
@@ -224,6 +231,9 @@ def play_battleship():
         ships_computer, hit_computer, miss_computer, comp_computer, missed_computer = check_player_shot(
             shot_computer, ships_computer, hit_computer, miss_computer, comp_computer)
         display_game_board(hit_computer, miss_computer, comp_computer)
+
+        print("Computer's Hits:", hit_computer)
+        print("Computer's Misses:", miss_computer)
 
         # Update computer tactics
         if missed_computer == 1:
