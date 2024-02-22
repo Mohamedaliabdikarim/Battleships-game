@@ -60,7 +60,7 @@ def create_computer_ships(taken, boats):
     return computer_ships, taken
 
 def display_player_board(taken):
-    print("            Battleships    ")
+    print("            Battleships/Your Board    ")
     print("     0  1  2  3  4  5  6  7  8  9")
 
     place = 0
@@ -91,7 +91,7 @@ def get_computer_shot(guesses, tactics):
     return shot, guesses
 
 def display_game_board(hit, miss, comp):
-    print("            Battleships    ")
+    print("            Battleships/Computer's Board    ")
     print("     0  1  2  3  4  5  6  7  8  9")
 
     place = 0
@@ -224,7 +224,7 @@ def play_battleship():
 
         # Repeat until ships are empty
         if check_if_empty(ships_player):
-            print("End of game - Winner in", i)
+            print("End of game - you'r Winner in", i)
             break
 
         # Computer shoots
@@ -251,4 +251,3 @@ def play_battleship():
             break
 
 play_battleship()
-
