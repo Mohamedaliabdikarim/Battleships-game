@@ -182,9 +182,12 @@ def check_if_empty(list_of_lists):
 
 def play_battleship():
     while True:
+        print("____________________________________________________________________________")
         print("Welcome to the Battleship game!")
         print("Your objective is to sink all the computer's ships before they sink yours.")
         print("On the game board, 'o' represents a hit, and 'x' represents a miss.")
+        print("____________________________________________________________________________")
+        print("                                                                              ")
         hit_player = []
         miss_player = []
         comp_player = []
