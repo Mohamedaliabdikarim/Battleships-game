@@ -40,7 +40,7 @@ This code generates two game boards: one for the player and one for the computer
 # Data Model
 ## flow chart
 The flowchart I created has been incredibly useful in guiding me through the process of developing the Battleship game. It serves as a roadmap, helping me understand the flow and direction to take in building the game. By visualizing each step, I've been able to gain a clearer understanding of how the game unfolds, the decisions it makes, and how each part of the code fits together.
-dettte må bort
+
 
 
 ![Image](.venv/assets/image/game6.png)
