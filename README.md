@@ -1,32 +1,50 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Batlleship Game
 
-Welcome,
+This project introduces a classic Battleships game, engagingly run and played within the terminal. The system operates seamlessly on a mock terminal hosted through Heroku. The primary objective of the game is to strategically destroy the computer's battleships. Players achieve this by making educated guesses on the grid coordinates where the opponent's battleships might be located and firing upon those positions. The challenge lies in outsmarting the computer, aiming to sink its battleships before it discovers and annihilates all of yours.
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **March 14, 2023**
+click here to play the game:[Battleship Game](https://battle--ships-game-32bc95ec5108.herokuapp.com/)
 
-## Reminders
+![Image](.venv\assets\image\game1.png)
 
-- Your code must be placed in the `run.py` file
-- Your dependencies must be placed in the `requirements.txt` file
-- Do not edit any of the other files or your code may not deploy properly
 
-## Creating the Heroku app
+# How to Play
+- A random board is generated, with battleships strategically placed for both the computer and the human player.
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+- The player's board displays their own ships marked with a 'o' symbol, offering a clear view of their fleet. Meanwhile, the computer's pieces remain concealed, adding an element of mystery to the game.
 
-1. `heroku/python`
-2. `heroku/nodejs`
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
+# Features
+-------- 
+## Existing Features
+When initiating the game, the rules will be audibly presented to you.
+![Image](.venv\assets\image\game2.png)
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+This code generates two game boards: one for the player and one for the computer. The specified number of ships are randomly positioned on the board when the game starts. The player's board displays the locations of all their ships, while the computer's board conceals the positions of its ships
+![Image](.venv\assets\image\game3.png)
+![Image](.venv\assets\image\gam4.png)
 
-Connect your GitHub repository and deploy as normal.
+- Input validation and checks are implemented to ensure the following conditions: 
+-  Inputs must be restricted to integers; letters, floats, or negative numbers are not allowed.
+- Inputs must be restricted to integers; letters, floats, or negative numbers are not allowed.
+- Coordinated that have already been guessed before cannot be re-entered.
 
-## Constraints
+![Image](.venv\assets\image\game5.png)
 
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
+## future features
+- Allow users to choose the size of the game board before starting a new game.
+- This could include variations such as 8x8 or 12x12 grids.
+- Allow players to customize their ship layouts before the game starts.
+- Implement a scoring system based on the number of moves or time taken to complete the game.
+- Create a leaderboard to track and display high scores.
 
----
+# Data Model
+## flow chart
+The flowchart I created has been incredibly useful in guiding me through the process of developing the Battleship game. It serves as a roadmap, helping me understand the flow and direction to take in building the game. By visualizing each step, I've been able to gain a clearer understanding of how the game unfolds, the decisions it makes, and how each part of the code fits together.
 
-Happy coding!
+
+![Image](.venv\assets\image\game6.png)
+The flowchart provides a structured and organized representation of the entire game process. It has assisted me in identifying key components, logical branches, and termination conditions. When referring to the diagram, I can quickly analyze which parts of the code are responsible for specific steps in the game.
+
+The visual representation has also facilitated my planning and implementation of various features. Following the flowchart, I've been able to organize my code more effectively, and it has given me a clearer direction when developing the different game mechanisms.
+
+Overall, this flowchart has been an invaluable resource, providing me with a solid understanding of how to build and structure the Battleship game. It has served as a helpful reference throughout the entire development process, contributing to making my code more organized and intuitive.
