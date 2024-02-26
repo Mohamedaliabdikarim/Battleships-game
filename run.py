@@ -60,9 +60,8 @@ def create_computer_ships(taken, boats):
     return computer_ships, taken
 
 def display_player_board(taken):
-    print("            Your Board    ")
+    print("            your board   ")
     print("     0  1  2  3  4  5  6  7  8  9")
-
     place = 0
     for x in range(10):
         row = ""
@@ -90,10 +89,10 @@ def get_computer_shot(guesses, tactics):
             print("Incorrect entry - please enter again")
     return shot, guesses
 
-def display_game_board(hit, miss, comp):
-    print("           Computer's Board     ")
+def display_game_board(hit, miss, comp, is_user_board=True):
+    board_name = "computers board" if is_user_board else "your board"
+    print(f"           {board_name}   ")
     print("     0  1  2  3  4  5  6  7  8  9")
-
     place = 0
     for x in range(10):
         row = ""
@@ -202,12 +201,12 @@ def play_battleship():
         guesses_computer = []  
         missed_computer = 0
         tactics_computer = []
-        
+    
         battleships = [5, 4, 3, 3, 2, 2]
-
+    
         # Computer creates a board for player 1
         ships_player, taken_player = create_player_ships(taken_player, battleships)
-
+    
         # User creates the board for player 2 - show board
         ships_computer, taken_computer = create_computer_ships(taken_computer, battleships)
         display_player_board(taken_computer)
@@ -228,14 +227,14 @@ def play_battleship():
 
             # Repeat until ships are empty
             if check_if_empty(ships_player):
-                print("End of game - you're Winner in", i)
+                print("End of game - Winner in", i)
                 break
-
+        
             # Computer shoots
             shot_computer, guesses_computer = get_computer_shot(guesses_computer, tactics_computer)
             ships_computer, hit_computer, miss_computer, comp_computer, missed_computer = check_player_shot(
                 shot_computer, ships_computer, hit_computer, miss_computer, comp_computer)
-            display_game_board(hit_computer, miss_computer, comp_computer)
+            display_game_board(hit_computer, miss_computer, comp_computer, is_user_board=False)
 
             print("Computer's Hits:", hit_computer)
             print("Computer's Misses:", miss_computer)
@@ -248,12 +247,11 @@ def play_battleship():
                 tactics_computer = []
             elif len(tactics_computer) > 0:
                 tactics_computer.pop(0)
-
+        
             # Check if computer ships are empty
             if check_if_empty(ships_computer):
                 print("End of game - Computer wins in", i)
                 break
-
         while True:
             play_again = input("Do you want to play again? (y/n): ")
             if play_again.lower() == 'y' or play_again.lower() == 'n':
@@ -262,6 +260,6 @@ def play_battleship():
                 print("Invalid input. Please enter 'y' or 'n'. Try again.")
 
         if play_again.lower() != 'y':
-            break
+            break    
 
 play_battleship()
