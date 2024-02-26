@@ -43,7 +43,7 @@ The flowchart I created has been incredibly useful in guiding me through the pro
 
 
 
-![Img](assets\imagee\game6.png)
+![Img](assets/imagee/game6.png)
 The flowchart provides a structured and organized representation of the entire game process. It has assisted me in identifying key components, logical branches, and termination conditions. When referring to the diagram, I can quickly analyze which parts of the code are responsible for specific steps in the game.
 
 The visual representation has also facilitated my planning and implementation of various features. Following the flowchart, I've been able to organize my code more effectively, and it has given me a clearer direction when developing the different game mechanisms.
