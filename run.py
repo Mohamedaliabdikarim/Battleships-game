@@ -60,7 +60,7 @@ def create_computer_ships(taken, boats):
     return computer_ships, taken
 
 def display_player_board(taken):
-    print("            Battleships/Your Board    ")
+    print("            Your Board    ")
     print("     0  1  2  3  4  5  6  7  8  9")
 
     place = 0
@@ -91,7 +91,7 @@ def get_computer_shot(guesses, tactics):
     return shot, guesses
 
 def display_game_board(hit, miss, comp):
-    print("            Battleships/Computer's Board    ")
+    print("            Computer's Board    ")
     print("     0  1  2  3  4  5  6  7  8  9")
 
     place = 0
