@@ -4,7 +4,7 @@ This project introduces a classic Battleships game, engagingly run and played wi
 
 click here to play the game:[Battleship Game](https://battle--ships-game-32bc95ec5108.herokuapp.com/)
 
-![Img](assets\imagee\game1.png)
+![Img](assets/imagee/game1.png)
 
 
 # How to Play
@@ -17,18 +17,18 @@ click here to play the game:[Battleship Game](https://battle--ships-game-32bc95e
 -------- 
 ## Existing Features
 When initiating the game, the rules will be audibly presented to you.
-![Img](assets\imagee\game2.png)
+![Img](assets/imagee/game2.png)
 
 This code generates two game boards: one for the player and one for the computer. The specified number of ships are randomly positioned on the board when the game starts. The player's board displays the locations of all their ships, while the computer's board conceals the positions of its ships
-![Img](assets\imagee\game3.png)
-![Img](assets\imagee\gam4.png)
+![Img](assets/imagee/game3.png)
+![Img](assets/imagee/gam4.png)
 
 - Input validation and checks are implemented to ensure the following conditions: 
 -  Inputs must be restricted to integers; letters, floats, or negative numbers are not allowed.
 - Inputs must be restricted to integers; letters, floats, or negative numbers are not allowed.
 - Coordinated that have already been guessed before cannot be re-entered.
 
-![Img](assets\imagee\game5.png)
+![Img](assets/imagee/game5.png)
 
 ## future features
 - Allow users to choose the size of the game board before starting a new game.
