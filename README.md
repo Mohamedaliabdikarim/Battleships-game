@@ -57,3 +57,8 @@ Overall, this flowchart has been an invaluable resource, providing me with a sol
 - click on the button in the right corner to create a new app.
 
 ![Img](assets/imagee/heroku2.png)
+On the application page, navigate to the settings section, indicated by an underline in green. Within the settings page, locate the "Buildpacks" option and configure them in the specified order: first, set the buildpack to "Python," and then follow it by setting the buildpack to "Node.js." Ensure that the sequence mirrors the arrangement illustrated in the accompanying picture for reference. This step is crucial for the proper configuration and functioning of the application, aligning with the recommended settings for a seamless integration of Python and Node.js within the platform.
+![Img](assets/imagee/heroku3.png)
+- Establish a connection between the Heroku application and the corresponding repository. 
+-  Return to the deploy page and opt for either manual or automatic deployment of the site.
+-   Once the deployment is complete, you'll be ready to engage with the game and enjoy its features. 
