@@ -49,4 +49,11 @@ The flowchart provides a structured and organized representation of the entire g
 The visual representation has also facilitated my planning and implementation of various features. Following the flowchart, I've been able to organize my code more effectively, and it has given me a clearer direction when developing the different game mechanisms.
 
 Overall, this flowchart has been an invaluable resource, providing me with a solid understanding of how to build and structure the Battleship game. It has served as a helpful reference throughout the entire development process, contributing to making my code more organized and intuitive.
- 
+
+#  Deployment
+- Begin by forking the repository on GitHub or cloning it to your local machine using the following command
+- Ensure you have a Heroku account. If not, sign up for an account on the Heroku website.
+![Img](assets/imagee/heroku1.png)
+- click on the button in the right corner to create a new app.
+
+![Img](assets/imagee/heroku2.png)
