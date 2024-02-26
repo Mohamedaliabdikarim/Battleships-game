@@ -91,7 +91,7 @@ def get_computer_shot(guesses, tactics):
     return shot, guesses
 
 def display_game_board(hit, miss, comp):
-    print("            Computer's Board    ")
+    print("           Computer's Board     ")
     print("     0  1  2  3  4  5  6  7  8  9")
 
     place = 0
