@@ -187,6 +187,7 @@ def play_battleship():
         print("Select a number between 0-99. The vertical digit represents 0-9, and the")
         print("horizontal one represents the second digit. For instance, choosing 50 means 5 is ")
         print("the vertical digit, and 0 is the horizontal one, without a comma.")
+        print("There are six ships on each board with lengths of 5, 4, 3, 3, 2, and 2. The ships can be oriented both vertically and horizontally.")
         print("On the game board, 'o' represents a hit, and 'x' represents a miss.")
         print("____________________________________________________________________________")
         print("                                                                              ")
